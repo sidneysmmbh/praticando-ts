@@ -8,6 +8,3 @@ export class Student extends Person {
     return `Nome: ${this.name} | E-mail:${this.email} | Sala: ${this._classroom}`;
   }
 }
-
-const student1 = new Student('Andre', 'andre@dndln.com', 512);
-console.log(student1.studentData);

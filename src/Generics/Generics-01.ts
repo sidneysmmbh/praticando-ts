@@ -1,16 +1,5 @@
-export interface Employee {
-  name: string;
-  office: string;
-  wage: number;
-}
-
-export const employees: Employee[] = [
-  { name: 'Pedro', office: 'motorista', wage: 2800 },
-  { name: 'Raquel', office: 'cordenadora', wage: 3400 },
-  { name: 'Andre', office: 'engenheiro', wage: 5400 },
-  { name: 'Fernanda', office: 'cordenadora geral', wage: 6500 },
-  { name: 'Marcos', office: 'projetista', wage: 3600 },
-];
+import { employees } from './DB/DB';
+import { Employee } from './Interfaces/EmployeeInterface';
 
 export function myFilter<T>(list: T[], callBack: (item: T) => boolean) {
   const newList: T[] = [];

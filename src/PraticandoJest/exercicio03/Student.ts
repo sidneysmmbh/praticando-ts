@@ -1,6 +1,10 @@
 export class Student {
   constructor(private _name: string, private readonly _notes: number[] = []) {}
 
+  get name() {
+    return this._name;
+  }
+
   addNote(note: number) {
     this._notes.push(note);
   }
